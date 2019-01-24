@@ -1,5 +1,5 @@
 {% set name = "pyWinhook" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 39bc4fd0477bc2d51d07ad4a9d4923654b417a4f4adc487c67966afa1780daee
-  patches:
-    - support-python-3.patch
+  sha256: 9ff70e8df522c2703e54af551c6a69b93def20dbe47ff2137a7fbb9d44720a49
 
 build:
-  number: 1000
+  number: 0
   # Note: --no-deps is currently required due to https://github.com/conda/conda-build/issues/3254
   # Once resolved, it should be removed.
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
