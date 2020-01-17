@@ -1,5 +1,5 @@
 {% set name = "pyWinhook" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: e22fe2ca1487bbf7e4c08928d15f7ed0ff724e7a11a1e3c21620f71485f1cd4e
+  sha256: 18fe2f63245d8a2f9d83f8d9c385e3695a6363badd50d492eb3e7f6f06a01c0c
 
 build:
   number: 0
